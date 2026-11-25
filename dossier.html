@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dossier partenaire, Fondations</title>
+<meta name="description" content="Dossier partenaire Fondations, saison 01. Les Convives et Nocturne : programmes, formules de partenariat, calendrier et contact.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#0A0A0A;--ivoire:#F3EFE6;--ivoire-2:#C9C4B8;--gris:#8C877C;--trait:#2A2925;--or:#E3A21A;--encre:#151410;--encre-2:#4A463E;--filet:#CFC8B8;--marge:clamp(20px,5vw,72px)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--noir);color:var(--ivoire);font-family:'Newsreader',Georgia,serif;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:300}
+.libelle{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.or{color:var(--or)}
+.gris{color:var(--gris)}
+
+.barre{position:sticky;top:0;z-index:5;background:rgba(10,10,10,.94);border-bottom:1px solid var(--trait)}
+.barre div{max-width:1100px;margin:0 auto;padding:16px var(--marge);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.barre a{text-decoration:none}
+.barre a:hover{color:var(--or)}
+
+.feuille{max-width:1100px;margin:0 auto;padding:clamp(72px,10vw,128px) var(--marge);border-bottom:1px solid var(--trait)}
+.feuille.claire{max-width:none;background:var(--ivoire);color:var(--encre);border:0}
+.feuille.claire>.dedans{max-width:1100px;margin:0 auto;padding:0 var(--marge)}
+.folio{display:flex;justify-content:space-between;gap:16px;margin-bottom:clamp(40px,6vw,72px)}
+.titre{font-size:clamp(36px,4.6vw,60px);line-height:1.04;letter-spacing:-.015em;max-width:18ch}
+.titre em{font-style:italic}
+.corps{font-size:18px;line-height:1.65;color:var(--ivoire-2)}
+.claire .corps{color:var(--encre-2)}
+
+/* Couverture */
+.couverture{min-height:92vh;display:flex;flex-direction:column;justify-content:space-between}
+.couverture img{width:min(360px,70%);height:auto}
+.couverture h1{font-size:clamp(52px,8vw,112px);line-height:.96;letter-spacing:-.02em;margin-top:clamp(48px,8vh,96px)}
+.couverture h1 em{font-style:italic;color:var(--or)}
+.couverture .bas{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 32px;padding-top:20px;border-top:1px solid var(--trait);margin-top:56px}
+
+/* Deux colonnes */
+.deux{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);margin-top:48px}
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--trait);margin-top:56px}
+.chiffres div{padding:24px 24px 0 0}
+.chiffres strong{display:block;font-weight:300;font-size:clamp(32px,4vw,52px);line-height:1;margin-bottom:10px}
+
+/* Programmes */
+.prog{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,88px);padding:48px 0;border-top:1px solid var(--trait)}
+.prog:first-of-type{border-top:0;padding-top:0}
+.prog img{width:100%;height:auto;max-width:440px}
+.prog .accroche{font-style:italic;font-size:clamp(24px,2.4vw,32px);line-height:1.25;margin:32px 0 16px}
+.fiche{margin:0;border-top:1px solid var(--trait)}
+.fiche div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--trait)}
+.fiche dt{padding-top:4px}
+.fiche dd{margin:0;font-size:17px;line-height:1.45}
+
+/* Atouts */
+.atouts{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(32px,5vw,72px)}
+.atouts li{padding:28px 0;border-top:1px solid var(--trait)}
+.atouts h3{font-size:26px;font-style:italic;margin-bottom:10px}
+.atouts p{font-size:17px;line-height:1.6;color:var(--ivoire-2)}
+
+/* Formules */
+.formules{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--encre);margin-top:56px}
+.formule{padding:32px 28px 8px 0;border-right:1px solid var(--filet)}
+.formule+.formule{padding-left:28px}
+.formule:last-child{border-right:0;padding-right:0}
+.formule .num{font-style:italic;font-size:22px;color:#8A5A00}
+.formule h3{font-size:28px;line-height:1.1;margin:12px 0 14px}
+.formule>p{font-size:17px;line-height:1.55;color:var(--encre-2)}
+.formule ul{list-style:none;margin:24px 0 0;padding:0}
+.formule li{font-size:16px;line-height:1.5;padding:10px 0;border-top:1px solid var(--filet)}
+.formule .tarif{margin-top:24px;padding-top:14px;border-top:1px solid var(--encre)}
+
+/* Calendrier */
+.etapes{list-style:none;margin:48px 0 0;padding:0;border-top:1px solid var(--trait)}
+.etapes li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--trait)}
+.etapes h3{font-size:26px;margin-bottom:8px}
+.etapes p{font-size:17px;line-height:1.6;color:var(--ivoire-2)}
+
+/* Contact */
+.contact .adresse{display:inline-block;margin-top:40px;font-size:clamp(20px,2.6vw,32px);font-style:italic;text-decoration:none;border-bottom:1px solid var(--or);padding-bottom:4px;overflow-wrap:anywhere}
+.contact .adresse:hover{color:var(--or)}
+.actions{display:flex;flex-wrap:wrap;gap:20px 40px;margin-top:48px}
+.lien{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding-bottom:8px;border-bottom:1px solid currentColor}
+.lien:hover{color:var(--or)}
+
+@media (max-width:820px){
+  .deux,.prog,.atouts{grid-template-columns:1fr}
+  .formules{grid-template-columns:1fr}
+  .formule,.formule+.formule{padding:28px 0 8px;border-right:0;border-bottom:1px solid var(--filet)}
+  .etapes li{grid-template-columns:1fr;gap:8px}
+  .chiffres{grid-template-columns:1fr}
+  .chiffres div{padding:20px 0;border-bottom:1px solid var(--trait)}
+}
+@media (max-width:520px){
+  .folio{flex-direction:column;gap:8px}
+  .fiche div{grid-template-columns:1fr;gap:6px}
+  .barre .retour-long{display:none}
+}
+
+@page{size:A4 landscape;margin:0}
+@media print{
+  .barre,.ecran{display:none !important}
+  body{font-size:15px}
+  .feuille{max-width:none;min-height:210mm;padding:16mm 18mm;border:0;break-after:page;page-break-after:always}
+  .feuille.claire>.dedans{padding:0}
+  .feuille:last-of-type{break-after:auto;page-break-after:auto}
+  .couverture{min-height:210mm}
+  .titre{font-size:40px}
+  .couverture h1{font-size:76px}
+  .corps{font-size:15.5px}
+  .prog{padding:20px 0;gap:40px}
+  .prog img{max-width:300px}
+  .prog .accroche{font-size:22px;margin:18px 0 10px}
+  .fiche div{padding:9px 0}
+  .fiche dd,.atouts p,.etapes p,.formule>p{font-size:14.5px}
+  .formule li{font-size:13.5px;padding:7px 0}
+  .formule h3{font-size:23px}
+  .atouts li{padding:18px 0}
+  .atouts h3,.etapes h3{font-size:21px}
+  .etapes li{padding:18px 0}
+  .folio{margin-bottom:28px}
+  .deux,.atouts,.formules,.etapes{margin-top:28px}
+  .chiffres{margin-top:32px}
+  .chiffres strong{font-size:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="barre libelle">
+<div>
+<a href="index.html">Fondations<span class="retour-long"> · retour au site</span></a>
+<a class="or" href="fondations-dossier-partenaire.pdf" download>Télécharger en PDF</a>
+</div>
+</div>
+
+<section class="feuille couverture">
+<div>
+<img class="logo" src="images/fondations-logo.png" alt="Fondations" width="560" height="198">
+<h1>Dossier partenaire.<br><em>Saison 01.</em></h1>
+</div>
+<div class="bas libelle">
+<span>Les Convives · Nocturne</span>
+<span class="gris">Lancement [MOIS 2027]</span>
+</div>
+</section>
+
+<section class="feuille">
+<div class="folio libelle"><span class="or">01 · Le groupe</span><span class="gris">Fondations</span></div>
+<h2 class="titre">Un groupe média indépendant, <em>né dans le Grand Est.</em></h2>
+<div class="deux corps">
+<p>Fondations produit et diffuse des programmes au long cours, tournés avec exigence, pour un public qui préfère la conversation au bruit. Nous croyons que les formats longs, soignés et sincères sont ceux qui installent une marque dans la durée.</p>
+<p>Nous tournons là où se trouvent les histoires : à Nancy, à Metz, à Luxembourg, à Paris, et ailleurs dès que le sujet le demande. Cet ancrage entre la Lorraine, le Grand-Duché et la capitale est rare dans le paysage média, et c'est notre force.</p>
+</div>
+<div class="chiffres">
+<div><strong>2</strong><span class="libelle gris">programmes à la saison 01</span></div>
+<div><strong>4</strong><span class="libelle gris">villes de tournage, et ailleurs</span></div>
+<div><strong>3</strong><span class="libelle gris">formules de partenariat</span></div>
+</div>
+</section>
+
+<section class="feuille">
+<div class="folio libelle"><span class="or">02 · Les programmes</span><span class="gris">Saison 01</span></div>
+
+<div class="prog">
+<div>
+<img class="logo" src="images/les-convives-logo.png" alt="Les Convives, un dîner Fondations" width="900" height="484">
+<p class="accroche">Une table, quelques invités, un repas qui dure.</p>
+<p class="corps">Dans la tradition des grands dîners filmés, on laisse la conversation aller là où elle veut. Chaque dîner choisit sa ville et sa maison, ses convives et son sujet.</p>
+</div>
+<dl class="fiche">
+<div><dt class="libelle gris">Format</dt><dd>Dîner filmé, conversation libre</dd></div>
+<div><dt class="libelle gris">Lieux</dt><dd>Une maison différente à chaque dîner</dd></div>
+<div><dt class="libelle gris">Diffusion</dt><dd>YouTube, épisode intégral et formats courts</dd></div>
+<div><dt class="libelle gris">Lancement</dt><dd>[MOIS 2027]</dd></div>
+</dl>
+</div>
+
+<div class="prog">
+<div>
+<img class="logo" src="images/nocturne-logo.png" alt="Nocturne, une nuit Fondations" width="1000" height="200">
+<p class="accroche">Une nuit, une ville, ceux qui la vivent.</p>
+<p class="corps">Dans l'esprit des grands magazines nocturnes, on suit une ville de la tombée du jour au premier café : ses adresses, ses figures, ce qui ne se voit qu'après minuit.</p>
+</div>
+<dl class="fiche">
+<div><dt class="libelle gris">Format</dt><dd>Magazine de nuit</dd></div>
+<div><dt class="libelle gris">Lieux</dt><dd>Nancy, Metz, Luxembourg, Paris</dd></div>
+<div><dt class="libelle gris">Diffusion</dt><dd>YouTube, épisode intégral et formats courts</dd></div>
+<div><dt class="libelle gris">Lancement</dt><dd>[MOIS 2027]</dd></div>
+</dl>
+</div>
+</section>
+
+<section class="feuille">
+<div class="folio libelle"><span class="or">03 · Pourquoi nous accompagner</span><span class="gris">Partenaires fondateurs</span></div>
+<h2 class="titre">Être là <em>dès le premier épisode.</em></h2>
+<ul class="atouts">
+<li><h3>Une présence naturelle.</h3><p>Pas de coupure publicitaire. Votre marque fait partie du décor, de la table ou de la nuit, avec la même exigence d'image que le programme.</p></li>
+<li><h3>Des contenus qui durent.</h3><p>Les épisodes restent en ligne et continuent d'être vus des mois après leur sortie. Chaque apparition travaille dans la durée.</p></li>
+<li><h3>Un territoire rare.</h3><p>Nancy, Metz, Luxembourg et Paris dans un même programme : un public régional, transfrontalier et parisien, réuni par une même ligne.</p></li>
+<li><h3>Un cercle restreint.</h3><p>Un seul partenaire par secteur et par programme. Les partenaires fondateurs gardent une place à part pour les saisons suivantes.</p></li>
+</ul>
+</section>
+
+<section class="feuille claire">
+<div class="dedans">
+<div class="folio libelle"><span style="color:#8A5A00">04 · Les formules</span><span style="color:#8C877C">Tarifs sur demande</span></div>
+<h2 class="titre">Trois façons de <em>nous accompagner.</em></h2>
+<div class="formules">
+<div class="formule">
+<span class="num">I.</span>
+<h3>Partenaire de programme</h3>
+<p>Votre marque associée aux Convives ou à Nocturne sur toute la saison.</p>
+<ul>
+<li>Exclusivité de secteur sur le programme</li>
+<li>Mention à l'ouverture et au générique de chaque épisode</li>
+<li>Intégration naturelle à l'image, choisie ensemble</li>
+<li>Droit d'utilisation des extraits pour votre communication</li>
+<li>Invitation aux tournages</li>
+</ul>
+<p class="tarif libelle">Engagement : une saison</p>
+</div>
+<div class="formule">
+<span class="num">II.</span>
+<h3>Partenaire d'épisode</h3>
+<p>Un épisode, une ville ou une séquence construite avec vous.</p>
+<ul>
+<li>Un épisode associé à votre marque</li>
+<li>Un lieu, une adresse ou un produit au cœur de la séquence</li>
+<li>Mention à l'ouverture et au générique de l'épisode</li>
+<li>Formats courts dédiés pour vos réseaux</li>
+</ul>
+<p class="tarif libelle">Engagement : un épisode</p>
+</div>
+<div class="formule">
+<span class="num">III.</span>
+<h3>Partenaire technique</h3>
+<p>Matériel, lieux, mobilité ou tenues, mis à disposition des tournages.</p>
+<ul>
+<li>Crédit au générique des épisodes concernés</li>
+<li>Présence visible dans les coulisses</li>
+<li>Contenus de tournage pour votre communication</li>
+</ul>
+<p class="tarif libelle">Échange de services</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="feuille">
+<div class="folio libelle"><span class="or">05 · Calendrier et engagements</span><span class="gris">Saison 01</span></div>
+<h2 class="titre">Les étapes <em>jusqu'au lancement.</em></h2>
+<ol class="etapes">
+<li><span class="libelle or">Maintenant</span><div><h3>Cercle des partenaires fondateurs</h3><p>Rencontres, choix de la formule et construction des intégrations avec chaque partenaire.</p></div></li>
+<li><span class="libelle or">[MOIS 2027]</span><div><h3>Tournages</h3><p>Premiers dîners et premières nuits, à Nancy, Metz, Luxembourg et Paris.</p></div></li>
+<li><span class="libelle or">[MOIS 2027]</span><div><h3>Lancement de la saison 01</h3><p>Sortie des premiers épisodes et des formats courts, avec la présence des partenaires dès le premier jour.</p></div></li>
+</ol>
+<div class="deux corps">
+<p><span class="libelle or" style="display:block;margin-bottom:10px">Indépendance</span>Fondations choisit ses invités et ses sujets. Les partenaires accompagnent les programmes, ils n'en dictent pas le contenu.</p>
+<p><span class="libelle or" style="display:block;margin-bottom:10px">Transparence</span>Chaque partenariat est signalé clairement à l'écran, conformément aux règles en vigueur sur le placement de produit.</p>
+</div>
+</section>
+
+<section class="feuille contact">
+<div class="folio libelle"><span class="or">06 · Contact</span><span class="gris">Fondations</span></div>
+<h2 class="titre">Construisons <em>la première saison ensemble.</em></h2>
+<a class="adresse" href="mailto:thomas.hoenig.cohesif@outlook.com?subject=Partenariat%20Fondations">thomas.hoenig.cohesif@outlook.com</a>
+<p class="corps" style="margin-top:24px">Nancy · Metz · Luxembourg · Paris · et ailleurs</p>
+<div class="actions ecran">
+<a class="lien" href="fondations-dossier-partenaire.pdf" download>Télécharger le dossier en PDF</a>
+<a class="lien" href="index.html">Retour au site</a>
+</div>
+</section>
+
+</body>
+</html>

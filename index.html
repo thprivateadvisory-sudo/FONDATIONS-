@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0A0A0A">
 <meta property="og:title" content="Fondations, groupe média">
 <meta property="og:description" content="Deux programmes qui prennent le temps : celui d'un dîner, celui d'une nuit.">
-<meta property="og:image" content="images/fondations-logo.png">
+<meta property="og:image" content="images/ouverture.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
@@ -34,7 +34,6 @@ h1,h2,h3{margin:0;font-weight:300}
 .libelle{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
 .or{color:var(--or)}
 .gris{color:var(--gris)}
-.logo{mix-blend-mode:lighten}
 
 /* En-tête */
 .entete{position:absolute;top:0;left:0;right:0;z-index:3}
@@ -45,13 +44,13 @@ h1,h2,h3{margin:0;font-weight:300}
 .entete nav a:hover{opacity:1;color:var(--or)}
 
 /* Ouverture */
-.ouverture{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#000}
+.ouverture{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#000 url(images/ouverture.jpg) center/cover}
 .ouverture video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ouverture .voile{position:absolute;inset:0;background:rgba(0,0,0,.42)}
 .ouverture .cadre{position:relative;z-index:2;width:100%;padding-bottom:clamp(48px,9vh,96px)}
 .ouverture h1{font-size:clamp(44px,7.4vw,112px);line-height:.98;letter-spacing:-.02em;max-width:13ch}
 .ouverture h1 em{font-style:italic;color:var(--or)}
-.ouverture .pied{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;margin-top:clamp(36px,6vh,64px);padding-top:20px;border-top:1px solid rgba(243,239,230,.28)}
+.ouverture .pied{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px 48px;max-width:760px;margin-top:clamp(36px,6vh,64px);padding-top:20px;border-top:1px solid rgba(243,239,230,.28)}
 
 /* Le groupe */
 .groupe{padding:clamp(96px,14vw,180px) 0 clamp(80px,11vw,140px)}
@@ -103,6 +102,7 @@ h1,h2,h3{margin:0;font-weight:300}
 .partenaires li h3{font-size:26px;margin-bottom:8px}
 .partenaires li p{font-size:17px;line-height:1.6;color:#4A463E}
 .lien{display:inline-block;margin-top:40px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding-bottom:8px;border-bottom:1px solid currentColor}
+.partenaires .liens{display:flex;flex-wrap:wrap;gap:8px 36px}
 .partenaires .lien{color:#151410}
 .partenaires .lien:hover{color:#8A5A00}
 
@@ -151,7 +151,7 @@ h1,h2,h3{margin:0;font-weight:300}
 </header>
 
 <section class="ouverture" aria-label="Ouverture">
-<video src="videos/Nocturne_intro.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true" onerror="this.remove()"></video>
+<video src="videos/ouverture.mp4" poster="images/ouverture.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true" onerror="this.remove()"></video>
 <div class="voile"></div>
 <div class="cadre">
 <p class="libelle or" style="margin-bottom:28px">Groupe média indépendant</p>
@@ -259,7 +259,7 @@ h1,h2,h3{margin:0;font-weight:300}
 <p class="libelle" style="color:#8A5A00">Partenaires fondateurs</p>
 <h2 id="t-partenaires">Accompagner la première saison.</h2>
 <p class="corps">Nous réunissons un cercle restreint de partenaires fondateurs. Chacun est associé à un programme et présent dès le premier épisode, de façon naturelle et durable.</p>
-<a class="lien" href="mailto:thomas.hoenig.cohesif@outlook.com?subject=Dossier%20partenaire%20Fondations">Demander le dossier partenaire</a>
+<div class="liens"><a class="lien" href="dossier.html">Consulter le dossier partenaire</a><a class="lien" href="fondations-dossier-partenaire.pdf" download>Télécharger en PDF</a></div>
 </div>
 <ol>
 <li><span class="num">I.</span><div><h3>Partenaire de programme</h3><p>Votre marque associée aux Convives ou à Nocturne sur toute la saison.</p></div></li>
@@ -282,11 +282,11 @@ h1,h2,h3{margin:0;font-weight:300}
 </div>
 <div><p class="libelle gris">Programmes</p><p>Les Convives<br>Nocturne</p></div>
 <div><p class="libelle gris">Tournages</p><p>Nancy, Metz<br>Luxembourg, Paris<br>et ailleurs</p></div>
-<div><p class="libelle gris">Écrire</p><p><a href="mailto:thomas.hoenig.cohesif@outlook.com?subject=Dossier%20partenaire%20Fondations">Dossier partenaire</a><br><a href="mailto:thomas.hoenig.cohesif@outlook.com?subject=Presse">Presse</a></p></div>
+<div><p class="libelle gris">Écrire</p><p><a href="dossier.html">Dossier partenaire</a><br><a href="mailto:thomas.hoenig.cohesif@outlook.com?subject=Presse">Presse</a></p></div>
 </footer>
 <div class="mentions libelle gris">
 <span>© 2026 Fondations</span>
-<span>Saison 01</span>
+<span>Images d'ouverture : <a href="https://commons.wikimedia.org/wiki/File:Paris_-_4K_Hyperlapse_-_YouTube.webm" rel="noopener">Mathieu Stanić, Paris Hypernight</a>, licence <a href="https://creativecommons.org/licenses/by/3.0/deed.fr" rel="noopener">CC BY 3.0</a>, extrait</span>
 </div>
 </div>
 </section>
